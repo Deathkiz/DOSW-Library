@@ -1,18 +1,12 @@
-package edu.eci.dosw.DOSW_Library.core.model;
+package edu.eci.dosw.DOSW_Library.controller.dto;
 
+import lombok.Data;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.time.LocalDate;
 
-
-@Setter
-@Getter
-public class Book {
-
-    private String title;
-    private String author;
-    private String id;
+@Data
+public class BookRequestDTO {
     private int totalCopies;
     private int availableCopies;
     private String category;
@@ -20,9 +14,6 @@ public class Book {
     private LocalDate releaseDate;
     private String isbn;
     private boolean isAvailable;
-
-
-    public boolean getIsAvailable() {
-        return isAvailable;
-    }
+    private String title;
+    private String author;
 }

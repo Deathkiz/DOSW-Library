@@ -1,4 +1,4 @@
 package edu.eci.dosw.DOSW_Library.controller.dto;
 
-public class UserDTO {
+public class LoanRequestDTO {
 }
